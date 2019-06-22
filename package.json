@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
+    "bootstrap-4-grid": "^2.4.1",
     "core-js": "^3.0.1"
   }
 }

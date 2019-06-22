@@ -1,11 +1,11 @@
 // Reset CSS
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 
-* { box-sizing: border-box; }
-
 // Core components
 @import './Variables.scss';
 @import './Typography.scss';
+@import './Grid.scss';
+@import './Layout.scss';
 @import './Buttons.scss';
 
 // Website components
