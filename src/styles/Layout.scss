@@ -3,11 +3,75 @@
 .container {
   padding: 0 1rem;
   &--boxed {
-    max-width: 1400px;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     width: 100%;
   }
 }
 .row {
   margin: 0;
+}
+.section {
+  margin: 0 0 4rem 0;
+}
+// Sections
+
+
+.box {
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  padding: 1rem 0;
+  &__img {
+    width: 100%;
+    height: 400px;
+    &-inner {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+  &__counter {
+    color: $primary;
+    font-weight: bold;
+  }
+  &__description {
+    margin: 1rem 0;
+    text-align: justify;
+  }
+}
+
+// Media 
+
+@media screen and (max-width: 1024px) {
+  .box {
+    &__content {
+      margin: 1rem 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    &__content {
+      padding: 1rem 0;
+      margin: 0;
+    }
+    &__img {
+      height: auto;
+      &-inner {
+
+      }
+    }
+  }
 }

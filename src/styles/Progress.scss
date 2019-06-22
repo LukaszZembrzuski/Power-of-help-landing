@@ -1,0 +1,14 @@
+.progress {
+  height: 40px;
+  width: 100%;
+  border: 1px solid $border;
+  border-radius: 0.6rem;
+  padding: 4px;
+  background: $accent;
+  margin: 1rem 0;
+  &--inner {
+    height: 100%;
+    background: $primary--medium;
+    border-radius: 0.6rem;
+  }
+}
