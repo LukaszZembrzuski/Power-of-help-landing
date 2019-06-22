@@ -1,0 +1,24 @@
+.navigation {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  &__col {
+    margin: 0 2rem 0 0;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+}
+
+// Media
+
+@media screen and (max-width: 1024px) {
+  .navigation {
+    justify-content: center;
+    &__col {
+      margin: 0 1rem 1rem 0;
+    }
+  }
+}

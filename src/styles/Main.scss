@@ -1,6 +1,36 @@
 // Reset CSS
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
 
-// Components
+* { box-sizing: border-box; }
 
+// Core components
+@import './Variables.scss';
 @import './Typography.scss';
+@import './Buttons.scss';
+
+// Website components
+
+@import './Navigation.scss';
+
+// Fast styles
+
+.socials-list {
+  display: flex;
+  align-items: center;
+  &__item {
+    margin: 0 1rem 0 0;
+    &:last-of-type {
+      margin: 0;
+    }
+  }
+  &__link {
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
